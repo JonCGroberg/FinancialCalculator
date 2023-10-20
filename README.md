@@ -1,17 +1,37 @@
-# Requirements
+# Financial Calculators
 
-## Technical Requirements
+Responsive website housing multiple financial calculators built with Javascript HTML Bootstrap and CSS
 
-- **Appropiate naming** of variables, functions, variables
-- No errors in `html`, `css`, or `javascript`
-- Having correct answers on each calculator
-- Input is restricted using `input type="number"`
+# Features
 
-## Looks
+### User Experience
 
-- Consistent look-and-feel with intuitive navigation
-- Responsive
-- Include Bootstrap from a CDN
+- Consistent mavigation and theme
+- **Focus** appear automatically on the first input field
+- Displaying monetary values **2 decimal** point values and **$** where needed
+- Inability to enter bad data using **input restriction**
+- Having a `reset` button
+- Using `readonly` on output form fields
+
+### Calculators 
+
+1. Mortgage Calculator
+
+   - Variables of **principal**, **interest** rate, and **loan length** entered by the user
+   - Display the **expected monthly payment** and **total interest** paid
+
+2. Future Value Calculator
+
+   - Variables of **deposit**, **interest** rate, and **number of years** from the user
+   - Display the **future value** and the **total interest** earned
+
+3. Present Value Ordinary Annuity Calculator.
+
+   - Variables of **monthly payout**, **expected interest rate**, and years to pay out from
+     the user
+   - Display the **present value** of that annuity
+
+
 
 ## Project Organization
 
@@ -23,12 +43,3 @@
       - **Each** calculator page that shows inputs and correct outputs
       - 1 calculator page showing erroneous inputs and an error message.
     - One **interesting** piece of code and a description of **why** it is interesting.
-
-## User Experience
-
-- **Focus** appear automatically on the first input field
-- Displaying monetary values with two digits to the right of the decimal point (and maybe a dollar
-  sign in front of the number if that makes sense)
-- Inability to enter bad data
-- Having a reset button
-- Using readonly on output form fields
