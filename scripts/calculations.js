@@ -1,8 +1,4 @@
-// window.onload = handleOnLoad;
-
-// function handleOnLoad() {}
-
-// function handleAddOnClick() {}
+export { calculateFutureCD, calculateMortgage, calculateOrdinaryAnnuity };
 
 // Calculates the monthly payment and total interest for a mortgage
 // Interest rates must be in decimal form
@@ -57,6 +53,6 @@ function calculateOrdinaryAnnuity(
   return data;
 }
 
-console.log(calculateMortgage(53000, 7.625 / 100, 15));
-console.log(calculateFutureCD(1000, 1.75 / 100, 5));
-console.log(calculateOrdinaryAnnuity(3000, 2.5 / 100, 20));
+// console.log(calculateMortgage(53000, 7.625 / 100, 15));
+// console.log(calculateFutureCD(1000, 1.75 / 100, 5));
+// console.log(calculateOrdinaryAnnuity(3000, 2.5 / 100, 20));
