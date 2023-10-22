@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mortgage Calculator</title>
+    <title>CD Calculator</title>
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Custom CSS and JS -->
-    <script src="scripts/mortgageCalculator.js" type="module" defer></script>
+    <script src="scripts/cdCalculator.js" type="module" defer></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="bg-body-tertiary" data-bs-theme="light">
@@ -55,8 +55,8 @@
 
         <div class="collapse navbar-collapse nav-tabs" id="navbarNav">
           <div class="navbar-nav">
-            <a href="mortgageCalculator.html" class="nav-link active px-3">Mortgage Calculator</a>
-            <a href="cdCalculator.html" class="nav-link px-3">CD Calculator</a>
+            <a href="mortgageCalculator.html" class="nav-link px-3">Mortgage Calculator</a>
+            <a href="cdCalculator.html" class="nav-link px-3 active">CD Calculator</a>
             <a href="presentValueAnnuityCalculator.html" class="nav-link px-3"
               >Present Value Annunity Calculator</a
             >
@@ -70,7 +70,7 @@
         <!-- Header -->
         <div class="card-header py-3">
           <div class="row">
-            <div class="col-9 col-sm-10">Mortgage Calculator</div>
+            <div class="col-9 col-sm-10">CD Calculator</div>
             <div class="col-3 col-sm-2">
               <button
                 id="clear"
@@ -88,10 +88,10 @@
           <div class="row row-gap-3 justify-content-center">
             <div class="col-12 input-group">
               <input
-                id="loanPrice"
+                id="deposit"
                 class="form-control"
                 type="number"
-                placeholder="Loan Price"
+                placeholder="Deposit"
                 required
               />
               <span class="input-group-text">$</span>
@@ -115,7 +115,7 @@
                 placeholder="Loan Length"
                 required
               />
-              <span class="input-group-text alert-danger">Months</span>
+              <span class="input-group-text alert-danger">Years</span>
             </div>
             <div class="col-12">
               <button
@@ -129,10 +129,10 @@
 
             <div class="col-12 input-group">
               <input
-                id="monthlyPayments"
+                id="futureWorth"
                 class="form-control"
                 type="number"
-                placeholder="Your Monthly Payments"
+                placeholder="Your CD's Future Value"
                 readonly
               />
               <span class="input-group-text">$</span>
