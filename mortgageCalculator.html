@@ -24,17 +24,58 @@
     <script src="scripts/mortgageCalculator.js" type="module" defer></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="bg-body-tertiary">
+  <body class="bg-body-tertiary" data-bs-theme="light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://joncgroberg.github.io">
+          <div class="btn ">
+            <span class="d-none d-md-inline"
+              ><i class="bi bi-arrow-bar-left"></i> Portfolio</span
+            >
+            <span class="small d-inline d-md-none">
+              <i class="bi bi-arrow-bar-left"></i>
+              Portfolio https://joncgroberg.github.io/</span
+            >
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: 0px"
+        >
+          <span class="bi-list"></span>
+        </button>
+        <!-- Collapsable nav items -->
+
+        <div class="collapse navbar-collapse nav-tabs" id="navbarNav">
+          <div class="navbar-nav">
+            <a href="#" class="nav-link active px-3">Mortgage Calculator</a>
+            <a href="cdCalculator.html" class="nav-link px-3">CD Calculator</a>
+            <a href="presentValueAnnuityCalculator.html" class="nav-link px-3"
+              >Present Value Annunity Calculator</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Calculator -->
     <main class="container-fluid" style="max-width: 26rem">
-      <form class="card shadow-sm mt-5 needs-validation" novalidate>
+      <form class="card shadow mt-5 needs-validation" novalidate>
+        <!-- Header -->
         <div class="card-header py-3">
           <div class="row">
-            <div class="col-9 col-sm-10 ">Mortgage Calculator</div>
+            <div class="col-9 col-sm-10">Mortgage Calculator</div>
             <div class="col-3 col-sm-2">
               <button
                 id="clear"
                 type="reset"
-                class="p-0 btn btn-sm btn-outline-secondary fw-bold col-12"
+                class="p-0 btn btn-sm btn-danger fw-bold col-12"
                 style="font-size: small"
               >
                 clear
@@ -42,6 +83,7 @@
             </div>
           </div>
         </div>
+        <!-- Body -->
         <div class="card-body">
           <div class="row row-gap-3 justify-content-center">
             <div class="col-12 input-group">
@@ -84,7 +126,7 @@
                 Calculate <i class="bi bi-arrow"></i>
               </button>
             </div>
-    
+
             <div class="col-12 input-group">
               <input
                 id="monthlyPayments"
@@ -105,15 +147,11 @@
                   readonly
                   nosubmit
                 />
-
                 <span class="input-group-text">$</span>
               </div>
             </div>
           </div>
         </div>
-            
-          
-        
       </form>
     </main>
   </body>

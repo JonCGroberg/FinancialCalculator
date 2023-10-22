@@ -1,5 +1,5 @@
 import { calculateMortgage } from "./calculations.js";
-import { attachValidator,markInvalid,markValid } from "./utilities.js";
+import { attachValidator, validify } from "./utilities.js";
 
 //Inputs
 const principal = document.getElementById("loanPrice");
@@ -13,12 +13,13 @@ const calculateBtn = document.getElementById("calculateBtn");
 
 //Only calculate when inputs are valid
 function calculate() {
+  
   if (
     principal.checkValidity() &&
     annualInterestRate.checkValidity() &&
     loanLength.checkValidity()
   ) {
-    markValid(principal, annualInterestRate, loanLength);
+    validify(principal, annualInterestRate, loanLength);
     animateSending();
     const results = calculateMortgage(
       Number(principal.value),
@@ -29,7 +30,7 @@ function calculate() {
     totalInterestPaid.value = results.totalInterest;
   } else {
     //Reset results to default value if input is invalid and mark invalid
-    markInvalid(principal, annualInterestRate, loanLength);
+    validify(principal, annualInterestRate, loanLength);
     monthlyPayment.value = "";
     totalInterestPaid.value = "";
   }

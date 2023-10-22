@@ -1,14 +1,12 @@
-export { attachValidator, markInvalid, markValid };
+export { attachValidator, validify };
 
-function markValid(...elements) {
-  elements.forEach((element) => {
-    element.classList.remove("is-invalid");
-  });
-}
-
-function markInvalid(...elements) {
-  elements.forEach((element) => {
-    element.classList.add("is-invalid");
+function validify(...inputs) {
+  inputs.forEach((input) => {
+    if (input.checkValidity()) {
+      input.classList.remove("is-invalid");
+    } else {
+      input.classList.add("is-invalid");
+    }
   });
 }
 
@@ -20,12 +18,12 @@ function attachValidator() {
     input.addEventListener(
       "change",
       (event) => {
-        if (!input.checkValidity()) {
+        if (input.checkValidity()) {
+          input.classList.remove("is-invalid");
+        } else {
+          input.classList.add("is-invalid");
           event.preventDefault();
           event.stopPropagation();
-          input.classList.add("is-invalid");
-        } else {
-          input.classList.remove("is-invalid");
         }
       },
       false
