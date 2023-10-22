@@ -24,17 +24,29 @@
     <script src="scripts/mortgageCalculator.js" type="module" defer></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="bg-body-tertiary">
+  <body class="bg-body-tertiary" data-bs-theme="light">
+    <!-- Navigation -->
+    <nav class="nav navbar-expand-lg bg-body shadow-sm py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://joncgroberg.github.io">
+          <div class="btn shadow btn-outline-primary" style="max-height: 3rem">
+            <i class="bi bi-arrow-bar-left"></i> Portfolio<span class="small d-none d-lg-inline"> https://joncgroberg.github.io/</span>
+          </div>
+        </a>
+      </div>
+    </nav>
+    <!-- Calculator -->
     <main class="container-fluid" style="max-width: 26rem">
-      <form class="card shadow-sm mt-5 needs-validation" novalidate>
+      <form class="card shadow mt-5 needs-validation" novalidate>
+        <!-- Header -->
         <div class="card-header py-3">
           <div class="row">
-            <div class="col-9 col-sm-10 ">Mortgage Calculator</div>
+            <div class="col-9 col-sm-10">Mortgage Calculator</div>
             <div class="col-3 col-sm-2">
               <button
                 id="clear"
                 type="reset"
-                class="p-0 btn btn-sm btn-outline-secondary fw-bold col-12"
+                class="p-0 btn btn-sm btn-danger fw-bold col-12"
                 style="font-size: small"
               >
                 clear
@@ -42,6 +54,7 @@
             </div>
           </div>
         </div>
+        <!-- Body -->
         <div class="card-body">
           <div class="row row-gap-3 justify-content-center">
             <div class="col-12 input-group">
@@ -84,7 +97,7 @@
                 Calculate <i class="bi bi-arrow"></i>
               </button>
             </div>
-    
+
             <div class="col-12 input-group">
               <input
                 id="monthlyPayments"
@@ -105,15 +118,11 @@
                   readonly
                   nosubmit
                 />
-
                 <span class="input-group-text">$</span>
               </div>
             </div>
           </div>
         </div>
-            
-          
-        
       </form>
     </main>
   </body>
