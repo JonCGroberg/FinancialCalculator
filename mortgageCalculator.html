@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://joncgroberg.github.io">
-          <div class="btn ">
+          <div class="btn">
             <span class="d-none d-md-inline"
               ><i class="bi bi-arrow-bar-left"></i> Portfolio</span
             >
@@ -55,7 +55,9 @@
 
         <div class="collapse navbar-collapse nav-tabs" id="navbarNav">
           <div class="navbar-nav">
-            <a href="mortgageCalculator.html" class="nav-link active px-3">Mortgage Calculator</a>
+            <a href="mortgageCalculator.html" class="nav-link active px-3"
+              >Mortgage Calculator</a
+            >
             <a href="cdCalculator.html" class="nav-link px-3">CD Calculator</a>
             <a href="presentValueAnnuityCalculator.html" class="nav-link px-3"
               >Present Value Annunity Calculator</a
@@ -68,14 +70,14 @@
     <main class="container-fluid" style="max-width: 26rem">
       <form class="card shadow mt-5 needs-validation" novalidate>
         <!-- Header -->
-        <div class="card-header py-3">
+        <div class="card-header py-4 ">
           <div class="row">
             <div class="col-9 col-sm-10">Mortgage Calculator</div>
             <div class="col-3 col-sm-2">
               <button
                 id="clear"
                 type="reset"
-                class="p-0 btn btn-sm btn-danger fw-bold col-12"
+                class="p-0 btn btn-danger fw-bold col-12"
                 style="font-size: small"
               >
                 clear
@@ -87,47 +89,57 @@
         <div class="card-body">
           <div class="row row-gap-3 justify-content-center">
             <div class="col-12 input-group">
-              <input
-                id="loanPrice"
-                class="form-control"
-                type="number"
-                placeholder="Loan Price"
-                required
-              />
+              <div class="form-floating">
+                <input
+                  id="loanPrice"
+                  class="form-control"
+                  type="number"
+                  placeholder="Loan Price"
+                  required
+                />
+                <label for="loanPrice">Loan Price</label>
+              </div>
               <span class="input-group-text">$</span>
             </div>
             <div class="col-12 input-group">
-              <input
-                id="interestRate"
-                class="form-control"
-                type="number"
-                placeholder="Interest Rate"
-                required
-                step="any"
-              />
+              <div class="form-floating">
+                <input
+                  id="interestRate"
+                  class="form-control col"
+                  type="number"
+                  placeholder="Interest rate"
+                  required
+                  step="any"
+                />
+                <label for="interestRate">Interest Rate</label>
+              </div>
               <span class="input-group-text">%</span>
             </div>
             <div class="col-12 input-group">
-              <input
-                id="loanLength"
-                class="form-control"
-                type="number"
-                placeholder="Loan Length"
-                required
-              />
+              <div class="form-floating">
+                <input
+                  id="loanLength"
+                  class="form-control"
+                  type="number"
+                  placeholder="Loan Length"
+                  required
+                />
+                <label for="loanLength">Loan Length</label>
+              </div>
               <span class="input-group-text alert-danger">Months</span>
             </div>
-            <div class="col-12">
+            <div class="col">
               <button
                 id="calculateBtn"
                 type="button"
-                class="btn btn-primary fw-bold col-12"
+                class="btn btn-primary fw-bold col-12 py-3"
               >
                 Calculate <i class="bi bi-arrow"></i>
               </button>
             </div>
 
             <div class="col-12 input-group">
+              <div class="form-floating">
               <input
                 id="monthlyPayments"
                 class="form-control"
@@ -135,10 +147,13 @@
                 placeholder="Your Monthly Payments"
                 readonly
               />
+              <label for="monthlyPayments">Your Monthly Payments</label>
+              </div>
               <span class="input-group-text">$</span>
             </div>
             <div class="col-12">
               <div class="input-group">
+                <div class="form-floating">
                 <input
                   id="totalInterestPaid"
                   class="form-control"
@@ -147,6 +162,8 @@
                   readonly
                   nosubmit
                 />
+                 <label for="totalInterestPaid">Your Total Interest Paid</label>
+                </div>
                 <span class="input-group-text">$</span>
               </div>
             </div>

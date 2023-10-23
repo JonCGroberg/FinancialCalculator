@@ -42,7 +42,7 @@ function animateSending() {
   setTimeout(function () {
     calculateBtn.classList.toggle("sending");
     calculateBtn.innerText = "Calculate";
-  }, 100);
+  }, 300);
 }
 
 attachValidator();

@@ -16,7 +16,7 @@ button:before {
     border-radius: 50%;
     opacity: 0;
     transition: opacity ease-in-out 1;
-    animation: 0.5s linear infinite rotate;
+    animation: .4s linear infinite rotate;
 }
 
 button.sending {
@@ -37,3 +37,4 @@ button.sending:before {
         transform: rotate(360deg);
     }
 }
+
