@@ -1,25 +1,26 @@
 # Financial Calculators
 
-Responsive website housing multiple financial calculators built with Javascript HTML Bootstrap and CSS
+Responsive website housing multiple financial calculators built with **Javascript** **HTML** **Bootstrap** and **CSS**
+
 # Live Site
 
->Mortgage Calculator [https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html](https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html)
+> Mortgage Calculator [https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html](https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html)
 
->CD Calculator [https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html](https://joncgroberg.github.io/FinancialCalculators/cdCalculator.html)
+> CD Calculator [https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html](https://joncgroberg.github.io/FinancialCalculators/cdCalculator.html)
 
->Annuity Calculator [https://joncgroberg.github.io/FinancialCalculators/presentValueAnnuityCalculator.html](https://joncgroberg.github.io/FinancialCalculators/presentValueAnnuityCalculator.html)
+> Annuity Calculator [https://joncgroberg.github.io/FinancialCalculators/presentValueAnnuityCalculator.html](https://joncgroberg.github.io/FinancialCalculators/presentValueAnnuityCalculator.html)
 
 # Features
 
 ### User Experience
 
-- Consistent mavigation and theme
+- Consistent navigation and theme
 - **Focus** automatically on the first input field
 - Monetary values rounded to **2 decimal** point values and include **$** where needed
 - Inability to enter bad data using **input restriction**
 - Abilty to clear input using a `reset` button
 
-### Calculators 
+### Calculators
 
 1. Mortgage Calculator
 
@@ -37,10 +38,11 @@ Responsive website housing multiple financial calculators built with Javascript 
      the user
    - Outputs the **present value** of that annuity
 
-### Technical 
-   - Uses `readonly` on output form fields
-  - Appropriate **branch** structure and **commit** history
-  - Screen shots
-      - **Each** calculator page that shows inputs and correct outputs
-      - Erroneous inputs and an error message.
-  - Documentation of **notable** pieces of code.
+### Technical
+
+- Uses `readonly` on output form fields
+- Appropriate **branch** structure and **commit** history
+- Screen shots
+  - **Each** calculator page that shows inputs and correct outputs
+  - Erroneous inputs and an error message.
+- Documentation of **notable** pieces of code.
