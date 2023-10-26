@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://joncgroberg.github.io">
-          <div class="btn ">
+          <div class="btn">
             <span class="d-none d-md-inline"
               ><i class="bi bi-arrow-bar-left"></i> Portfolio</span
             >
@@ -55,8 +55,12 @@
 
         <div class="collapse navbar-collapse nav-tabs" id="navbarNav">
           <div class="navbar-nav">
-            <a href="mortgageCalculator.html" class="nav-link px-3">Mortgage Calculator</a>
-            <a href="cdCalculator.html" class="nav-link px-3 active">CD Calculator</a>
+            <a href="mortgageCalculator.html" class="nav-link px-3"
+              >Mortgage Calculator</a
+            >
+            <a href="cdCalculator.html" class="nav-link px-3 active"
+              >CD Calculator</a
+            >
             <a href="presentValueAnnuityCalculator.html" class="nav-link px-3"
               >Present Value Annunity Calculator</a
             >
@@ -68,7 +72,7 @@
     <main class="container-fluid" style="max-width: 26rem">
       <form class="card shadow mt-5 needs-validation" novalidate>
         <!-- Header -->
-        <div class="card-header py-3">
+        <div class="card-header py-4">
           <div class="row">
             <div class="col-9 col-sm-10">CD Calculator</div>
             <div class="col-3 col-sm-2">
@@ -87,34 +91,43 @@
         <div class="card-body">
           <div class="row row-gap-3 justify-content-center">
             <div class="col-12 input-group">
-              <input
-                id="deposit"
-                class="form-control"
-                type="number"
-                placeholder="Deposit"
-                required
-              />
+              <div class="form-floating">
+                <input
+                  id="deposit"
+                  class="form-control"
+                  type="number"
+                  placeholder="Deposit"
+                  required
+                />
+                <label for="desposit">Deposit</label>
+              </div>
               <span class="input-group-text">$</span>
             </div>
             <div class="col-12 input-group">
-              <input
-                id="interestRate"
-                class="form-control"
-                type="number"
-                placeholder="Interest Rate"
-                required
-                step="any"
-              />
+              <div class="form-floating">
+                <input
+                  id="interestRate"
+                  class="form-control"
+                  type="number"
+                  placeholder="Interest Rate"
+                  required
+                  step="any"
+                />
+                <label for="interestRate">Interest Rate</label>
+              </div>
               <span class="input-group-text">%</span>
             </div>
             <div class="col-12 input-group">
-              <input
-                id="loanLength"
-                class="form-control"
-                type="number"
-                placeholder="Loan Length"
-                required
-              />
+              <div class="form-floating">
+                <input
+                  id="loanLength"
+                  class="form-control"
+                  type="number"
+                  placeholder="Loan Length"
+                  required
+                />
+                <label for="loanLength">Loan Length</label>
+              </div>
               <span class="input-group-text alert-danger">Years</span>
             </div>
             <div class="col-12">
@@ -126,27 +139,32 @@
                 Calculate <i class="bi bi-arrow"></i>
               </button>
             </div>
-
             <div class="col-12 input-group">
-              <input
-                id="futureWorth"
-                class="form-control"
-                type="number"
-                placeholder="Your CD's Future Value"
-                readonly
-              />
+              <div class="form-floating">
+                <input
+                  id="futureWorth"
+                  class="form-control"
+                  type="number"
+                  placeholder="Your CD's Future Value"
+                  readonly
+                />
+                <label for="futureWorth">Your CD's Future Value</label>
+              </div>
               <span class="input-group-text">$</span>
             </div>
             <div class="col-12">
               <div class="input-group">
-                <input
-                  id="totalInterestPaid"
-                  class="form-control"
-                  type="number"
-                  placeholder="Your Total Interest Paid"
-                  readonly
-                  nosubmit
-                />
+                <div class="form-floating">
+                  <input
+                    id="totalInterestPaid"
+                    class="form-control"
+                    type="number"
+                    placeholder="Your Total Interest Paid"
+                    readonly
+                    nosubmit
+                  />
+                  <label for="desposit">Your Total Interest Paid</label>
+                </div>
                 <span class="input-group-text">$</span>
               </div>
             </div>
