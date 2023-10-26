@@ -1,8 +1,22 @@
+
 # Financial Calculators
 
 Responsive website housing multiple financial calculators built with **Javascript** **HTML** **Bootstrap** and **CSS**
 
-# Live Site
+<!-- TOC start -->
+
+## Table of Contents
+- [Financial Calculators](#financial-calculators)
+  - [Table of Contents](#table-of-contents)
+  - [Live Site](#live-site)
+  - [Features](#features)
+    - [User Experience](#user-experience)
+    - [Calculators](#calculators)
+    - [Technical](#technical)
+
+<!-- TOC end -->
+
+## Live Site
 
 > Mortgage Calculator [https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html](https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html)
 
@@ -10,7 +24,7 @@ Responsive website housing multiple financial calculators built with **Javascrip
 
 > Annuity Calculator [https://joncgroberg.github.io/FinancialCalculators/presentValueAnnuityCalculator.html](https://joncgroberg.github.io/FinancialCalculators/presentValueAnnuityCalculator.html)
 
-# Features
+## Features
 
 ### User Experience
 
