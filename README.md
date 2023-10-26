@@ -3,46 +3,44 @@
 Responsive website housing multiple financial calculators built with Javascript HTML Bootstrap and CSS
 # Live Site
 
-[https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html](https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html)
+>Mortgage Calculator [https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html](https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html)
+
+>CD Calculator [https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html](https://joncgroberg.github.io/FinancialCalculators/cdCalculator.html)
+
+>Annuity Calculator [https://joncgroberg.github.io/FinancialCalculators/presentValueAnnuityCalculator.html](https://joncgroberg.github.io/FinancialCalculators/presentValueAnnuityCalculator.html)
 
 # Features
 
 ### User Experience
 
 - Consistent mavigation and theme
-- **Focus** appear automatically on the first input field
-- Displaying monetary values **2 decimal** point values and **$** where needed
+- **Focus** automatically on the first input field
+- Monetary values rounded to **2 decimal** point values and include **$** where needed
 - Inability to enter bad data using **input restriction**
-- Having a `reset` button
-- Using `readonly` on output form fields
+- Abilty to clear input using a `reset` button
 
 ### Calculators 
 
 1. Mortgage Calculator
 
-   - Variables of **principal**, **interest** rate, and **loan length** entered by the user
-   - Display the **expected monthly payment** and **total interest** paid
+   - Inputs of **principal**, **interest** rate, and **loan length** entered by the user
+   - Outputs the **expected monthly payment** and **total interest** paid
 
 2. Future Value Calculator
 
-   - Variables of **deposit**, **interest** rate, and **number of years** from the user
-   - Display the **future value** and the **total interest** earned
+   - Inputs of **deposit**, **interest** rate, and **number of years** from the user
+   - Outputs the **future value** and the **total interest** earned
 
 3. Present Value Ordinary Annuity Calculator.
 
-   - Variables of **monthly payout**, **expected interest rate**, and years to pay out from
+   - Inputs of **monthly payout**, **expected interest rate**, and years to pay out from
      the user
-   - Display the **present value** of that annuity
+   - Outputs the **present value** of that annuity
 
-
-
-## Project Organization
-
-- GitHub **Repository**
+### Technical 
+   - Uses `readonly` on output form fields
   - Appropriate **branch** structure and **commit** history
-  - Include a **README.md** file that describes your project and
-    - Screen shots
-      - Home page
+  - Screen shots
       - **Each** calculator page that shows inputs and correct outputs
-      - 1 calculator page showing erroneous inputs and an error message.
-    - One **interesting** piece of code and a description of **why** it is interesting.
+      - Erroneous inputs and an error message.
+  - Documentation of **notable** pieces of code.
