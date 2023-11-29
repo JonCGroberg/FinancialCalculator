@@ -52,7 +52,3 @@ function calculateOrdinaryAnnuity(
   let data = { presentValueAnnuity: presentValueAnnuity.toFixed(2) };
   return data;
 }
-
-// console.log(calculateMortgage(53000, 7.625 / 100, 15));
-// console.log(calculateFutureCD(1000, 1.75 / 100, 5));
-// console.log(calculateOrdinaryAnnuity(3000, 2.5 / 100, 20));
