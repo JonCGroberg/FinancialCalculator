@@ -1,6 +1,6 @@
 # Financial Calculators
 
-Responsive website housing multiple financial calculators built with **Javascript** **HTML** **Bootstrap** and **CSS**
+*Responsive website housing multiple financial calculators built with **Javascript** **HTML** **Bootstrap** and **CSS***
 
 > Mortgage Calculator [https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html](https://joncgroberg.github.io/FinancialCalculators/mortgageCalculator.html)
 
